@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic AI Farmer Challenge - Agricultural Advisor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo-icon">🌾</span>
+                <span class="logo-text">AI Farmer Challenge</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#requirements">Requirements</a></li>
+                <li><a href="#knowledge">Knowledge</a></li>
+                <li><a href="#deliverables">Deliverables</a></li>
+                <li><a href="#evaluation">Evaluation</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">Advanced Challenge</div>
+            <h1 class="hero-title">Agentic AI Farmer</h1>
+            <p class="hero-subtitle">Domain-Expert Agricultural Advisor</p>
+            <p class="hero-description">
+                Build an LLM-based domain-expert AI agent that functions as an experienced farmer or agricultural advisor, 
+                providing actionable, context-aware recommendations across the entire crop lifecycle.
+            </p>
+            <div class="hero-tags">
+                <span class="tag">LLMs</span>
+                <span class="tag">Agentic AI</span>
+                <span class="tag">Knowledge Engineering</span>
+                <span class="tag">RAG</span>
+                <span class="tag">Planning</span>
+            </div>
+            <a href="#overview" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="section overview-section">
+        <div class="container">
+            <h2 class="section-title">Challenge Overview</h2>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Difficulty Level</h3>
+                    <p class="difficulty-badge advanced">Advanced</p>
+                </div>
+                <div class="overview-card">
+                    <div class="card-icon">🌍</div>
+                    <h3>Real-World Impact</h3>
+                    <p>Supporting farmers with limited access to agricultural expertise</p>
+                </div>
+                <div class="overview-card">
+                    <div class="card-icon">🤖</div>
+                    <h3>AI Approach</h3>
+                    <p>Agentic reasoning with domain knowledge engineering</p>
+                </div>
+            </div>
+
+            <div class="context-box">
+                <h3>Context & Background</h3>
+                <p>
+                    Agriculture depends on local conditions such as soil, climate, seasonality, and water availability. 
+                    Farmers must continuously make informed decisions about crop selection, sowing, irrigation, fertilization, 
+                    pest management, and harvesting. However, access to reliable, localized agricultural expertise remains limited.
+                </p>
+                <p class="emphasis">
+                    This challenge emphasizes <strong>agentic reasoning and domain knowledge engineering</strong>, 
+                    not just conversational AI.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Requirements Section -->
+    <section id="requirements" class="section requirements-section">
+        <div class="container">
+            <h2 class="section-title">Core Requirements</h2>
+            <div class="requirements-grid">
+                <div class="requirement-card">
+                    <div class="req-number">01</div>
+                    <h3>Crop Recommendations</h3>
+                    <p>Recommend crops based on region, season, soil type, and water availability</p>
+                    <ul class="feature-list">
+                        <li>Regional suitability analysis</li>
+                        <li>Seasonal alignment</li>
+                        <li>Soil compatibility matching</li>
+                        <li>Water requirement assessment</li>
+                    </ul>
+                </div>
+
+                <div class="requirement-card">
+                    <div class="req-number">02</div>
+                    <h3>Lifecycle Guidance</h3>
+                    <p>Advise when to sow, irrigate, fertilize, and harvest</p>
+                    <ul class="feature-list">
+                        <li>Optimal sowing windows</li>
+                        <li>Irrigation schedules</li>
+                        <li>Fertilization timing</li>
+                        <li>Harvest indicators</li>
+                    </ul>
+                </div>
+
+                <div class="requirement-card">
+                    <div class="req-number">03</div>
+                    <h3>Dynamic Adaptation</h3>
+                    <p>Adapt recommendations as conditions change</p>
+                    <ul class="feature-list">
+                        <li>Weather response</li>
+                        <li>Growth stage tracking</li>
+                        <li>Condition monitoring</li>
+                        <li>Real-time adjustments</li>
+                    </ul>
+                </div>
+
+                <div class="requirement-card">
+                    <div class="req-number">04</div>
+                    <h3>Proactive Intelligence</h3>
+                    <p>Suggest actions and warn about risks</p>
+                    <ul class="feature-list">
+                        <li>Preventive measures</li>
+                        <li>Risk alerts</li>
+                        <li>Opportunity identification</li>
+                        <li>Best practice suggestions</li>
+                    </ul>
+                </div>
+
+                <div class="requirement-card">
+                    <div class="req-number">05</div>
+                    <h3>Context Maintenance</h3>
+                    <p>Maintain context and state across interactions</p>
+                    <ul class="feature-list">
+                        <li>Conversation history</li>
+                        <li>Crop lifecycle tracking</li>
+                        <li>Field state management</li>
+                        <li>Decision continuity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domain Knowledge Section -->
+    <section id="knowledge" class="section knowledge-section">
+        <div class="container">
+            <h2 class="section-title">Domain Knowledge Requirements</h2>
+            
+            <div class="knowledge-alert">
+                <div class="alert-icon">⚠️</div>
+                <div class="alert-content">
+                    <h3>Mandatory Knowledge Engineering</h3>
+                    <p>
+                        Sourcing and structuring domain knowledge is <strong>mandatory</strong>. Teams must independently 
+                        identify, curate, validate, and structure agricultural knowledge from credible sources. 
+                        The solution must not rely solely on the base LLM's general knowledge.
+                    </p>
+                    <p class="alert-note">
+                        This reflects real-world AI system design where high-quality domain expertise must be 
+                        explicitly acquired, organized, and maintained.
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Knowledge Scope (Indicative)</h3>
+            <div class="knowledge-grid">
+                <div class="knowledge-card">
+                    <div class="knowledge-icon">📅</div>
+                    <h4>Crop Calendars</h4>
+                    <ul>
+                        <li>Seasonal suitability</li>
+                        <li>Planting windows</li>
+                        <li>Growth duration</li>
+                        <li>Climate requirements</li>
+                    </ul>
+                </div>
+
+                <div class="knowledge-card">
+                    <div class="knowledge-icon">🌱</div>
+                    <h4>Soil & Crops</h4>
+                    <ul>
+                        <li>Soil type classifications</li>
+                        <li>pH requirements</li>
+                        <li>Nutrient needs</li>
+                        <li>Compatibility matrix</li>
+                    </ul>
+                </div>
+
+                <div class="knowledge-card">
+                    <div class="knowledge-icon">💧</div>
+                    <h4>Irrigation</h4>
+                    <ul>
+                        <li>Water requirements</li>
+                        <li>Scheduling patterns</li>
+                        <li>Growth stage needs</li>
+                        <li>Efficiency methods</li>
+                    </ul>
+                </div>
+
+                <div class="knowledge-card">
+                    <div class="knowledge-icon">🧪</div>
+                    <h4>Fertilization</h4>
+                    <ul>
+                        <li>NPK requirements</li>
+                        <li>Application timing</li>
+                        <li>Organic vs synthetic</li>
+                        <li>Deficiency indicators</li>
+                    </ul>
+                </div>
+
+                <div class="knowledge-card">
+                    <div class="knowledge-icon">🌾</div>
+                    <h4>Harvest Timing</h4>
+                    <ul>
+                        <li>Maturity indicators</li>
+                        <li>Quality assessment</li>
+                        <li>Optimal windows</li>
+                        <li>Post-harvest handling</li>
+                    </ul>
+                </div>
+
+                <div class="knowledge-card">
+                    <div class="knowledge-icon">📍</div>
+                    <h4>Regional Practices</h4>
+                    <ul>
+                        <li>Local crop varieties</li>
+                        <li>Traditional methods</li>
+                        <li>Climate adaptations</li>
+                        <li>Market considerations</li>
+                    </ul>
+                </div>
+
+                <div class="knowledge-card">
+                    <div class="knowledge-icon">🐛</div>
+                    <h4>Pest & Disease</h4>
+                    <ul>
+                        <li>Common pests by crop</li>
+                        <li>Disease identification</li>
+                        <li>Prevention strategies</li>
+                        <li>Treatment options</li>
+                    </ul>
+                </div>
+
+                <div class="knowledge-card">
+                    <div class="knowledge-icon">🌤️</div>
+                    <h4>Weather Patterns</h4>
+                    <ul>
+                        <li>Seasonal variations</li>
+                        <li>Risk periods</li>
+                        <li>Crop resilience</li>
+                        <li>Adaptation strategies</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="knowledge-sources">
+                <h3 class="subsection-title">Knowledge Source Guidelines</h3>
+                <div class="sources-grid">
+                    <div class="source-type">
+                        <h4>✅ Credible Sources</h4>
+                        <ul>
+                            <li>Agricultural research institutions</li>
+                            <li>Government extension services</li>
+                            <li>Peer-reviewed publications</li>
+                            <li>University agricultural departments</li>
+                            <li>FAO and WHO databases</li>
+                            <li>Local farming cooperatives</li>
+                        </ul>
+                    </div>
+                    <div class="source-type">
+                        <h4>📋 Structuring Methods</h4>
+                        <ul>
+                            <li>Ontologies and taxonomies</li>
+                            <li>Rule-based systems</li>
+                            <li>Knowledge graphs</li>
+                            <li>Vector databases</li>
+                            <li>Decision trees</li>
+                            <li>Relational databases</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deliverables Section -->
+    <section id="deliverables" class="section deliverables-section">
+        <div class="container">
+            <h2 class="section-title">Deliverables</h2>
+            <div class="deliverables-list">
+                <div class="deliverable-item">
+                    <div class="deliverable-icon">💻</div>
+                    <div class="deliverable-content">
+                        <h3>Working Demo or Prototype</h3>
+                        <p>A functional system demonstrating the AI farmer's capabilities with real agricultural scenarios</p>
+                    </div>
+                </div>
+
+                <div class="deliverable-item">
+                    <div class="deliverable-icon">🏗️</div>
+                    <div class="deliverable-content">
+                        <h3>System Architecture Explanation</h3>
+                        <p>Detailed documentation of the technical architecture, including LLM integration, knowledge retrieval, and agentic workflows</p>
+                    </div>
+                </div>
+
+                <div class="deliverable-item">
+                    <div class="deliverable-icon">📚</div>
+                    <div class="deliverable-content">
+                        <h3>Knowledge Sources & Methodology</h3>
+                        <p>Comprehensive description of how domain knowledge was sourced, validated, structured, and integrated into the system</p>
+                    </div>
+                </div>
+
+                <div class="deliverable-item">
+                    <div class="deliverable-icon">🎬</div>
+                    <div class="deliverable-content">
+                        <h3>Example Scenarios</h3>
+                        <p>Concrete demonstrations showing agentic behavior, contextual reasoning, and adaptive recommendations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evaluation Section -->
+    <section id="evaluation" class="section evaluation-section">
+        <div class="container">
+            <h2 class="section-title">Evaluation Criteria</h2>
+            <div class="criteria-container">
+                <div class="criteria-chart">
+                    <div class="criteria-item" style="--percentage: 20">
+                        <div class="criteria-bar">
+                            <div class="criteria-fill"></div>
+                        </div>
+                        <div class="criteria-info">
+                            <h4>Domain Knowledge Quality</h4>
+                            <span class="criteria-percent">20%</span>
+                        </div>
+                        <p>Coverage, accuracy, and credibility of agricultural knowledge</p>
+                    </div>
+
+                    <div class="criteria-item" style="--percentage: 15">
+                        <div class="criteria-bar">
+                            <div class="criteria-fill"></div>
+                        </div>
+                        <div class="criteria-info">
+                            <h4>Knowledge Structuring</h4>
+                            <span class="criteria-percent">15%</span>
+                        </div>
+                        <p>Retrieval efficiency and knowledge organization methods</p>
+                    </div>
+
+                    <div class="criteria-item" style="--percentage: 15">
+                        <div class="criteria-bar">
+                            <div class="criteria-fill"></div>
+                        </div>
+                        <div class="criteria-info">
+                            <h4>Agricultural Accuracy</h4>
+                            <span class="criteria-percent">15%</span>
+                        </div>
+                        <p>Contextual correctness and practical applicability</p>
+                    </div>
+
+                    <div class="criteria-item" style="--percentage: 25">
+                        <div class="criteria-bar">
+                            <div class="criteria-fill"></div>
+                        </div>
+                        <div class="criteria-info">
+                            <h4>Agentic Reasoning</h4>
+                            <span class="criteria-percent">25%</span>
+                        </div>
+                        <p>Adaptability, proactive suggestions, and autonomous decision-making</p>
+                    </div>
+
+                    <div class="criteria-item" style="--percentage: 15">
+                        <div class="criteria-bar">
+                            <div class="criteria-fill"></div>
+                        </div>
+                        <div class="criteria-info">
+                            <h4>Usability</h4>
+                            <span class="criteria-percent">15%</span>
+                        </div>
+                        <p>Farmer-friendliness and practical interface design</p>
+                    </div>
+
+                    <div class="criteria-item" style="--percentage: 10">
+                        <div class="criteria-bar">
+                            <div class="criteria-fill"></div>
+                        </div>
+                        <div class="criteria-info">
+                            <h4>Innovation</h4>
+                            <span class="criteria-percent">10%</span>
+                        </div>
+                        <p>Novel approaches and creative system design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonus Features Section -->
+    <section class="section bonus-section">
+        <div class="container">
+            <h2 class="section-title">Optional Enhancements (Bonus)</h2>
+            <div class="bonus-grid">
+                <div class="bonus-card">
+                    <div class="bonus-icon">🌦️</div>
+                    <h3>Weather Integration</h3>
+                    <p>Real-time weather data or sensor integration for dynamic recommendations</p>
+                </div>
+
+                <div class="bonus-card">
+                    <div class="bonus-icon">🗣️</div>
+                    <h3>Multi-Language Support</h3>
+                    <p>Voice-based or multi-language interfaces for accessibility</p>
+                </div>
+
+                <div class="bonus-card">
+                    <div class="bonus-icon">♻️</div>
+                    <h3>Sustainability Focus</h3>
+                    <p>Eco-friendly and sustainable farming recommendations</p>
+                </div>
+
+                <div class="bonus-card">
+                    <div class="bonus-icon">📖</div>
+                    <h3>Source Attribution</h3>
+                    <p>Knowledge citation and source tracking for transparency</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="section resources-section">
+        <div class="container">
+            <h2 class="section-title">Pest & Disease Reference</h2>
+            
+            <div class="resources-intro">
+                <p>
+                    Comprehensive pest and disease management is crucial for successful crop production. 
+                    Below are key resources and reference materials to help structure your knowledge base.
+                </p>
+            </div>
+
+            <div class="pest-disease-grid">
+                <div class="reference-card">
+                    <h3>🐛 Common Agricultural Pests</h3>
+                    <div class="reference-content">
+                        <h4>Insect Pests:</h4>
+                        <ul>
+                            <li><strong>Aphids</strong> - Sap-sucking insects affecting multiple crops</li>
+                            <li><strong>Whiteflies</strong> - Virus vectors in vegetables and cotton</li>
+                            <li><strong>Stem Borers</strong> - Major threat to cereals and sugarcane</li>
+                            <li><strong>Fruit Flies</strong> - Damage to fruits and vegetables</li>
+                            <li><strong>Leaf Miners</strong> - Tunneling damage in leaves</li>
+                        </ul>
+                        <h4>Other Pests:</h4>
+                        <ul>
+                            <li>Rodents and birds</li>
+                            <li>Nematodes</li>
+                            <li>Mites</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="reference-card">
+                    <h3>🦠 Common Crop Diseases</h3>
+                    <div class="reference-content">
+                        <h4>Fungal Diseases:</h4>
+                        <ul>
+                            <li><strong>Powdery Mildew</strong> - White powder on leaves</li>
+                            <li><strong>Rust</strong> - Orange/brown pustules on leaves</li>
+                            <li><strong>Blight</strong> - Rapid leaf death</li>
+                            <li><strong>Root Rot</strong> - Fungal damage to roots</li>
+                        </ul>
+                        <h4>Bacterial & Viral:</h4>
+                        <ul>
+                            <li>Bacterial wilt</li>
+                            <li>Mosaic viruses</li>
+                            <li>Leaf spot diseases</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="reference-card">
+                    <h3>🔍 Identification Methods</h3>
+                    <div class="reference-content">
+                        <ul>
+                            <li><strong>Visual Symptoms:</strong> Leaf discoloration, wilting, spots</li>
+                            <li><strong>Growth Patterns:</strong> Stunted growth, abnormal development</li>
+                            <li><strong>Damage Signs:</strong> Holes, chewed edges, tunnels</li>
+                            <li><strong>Timing:</strong> Seasonal occurrence patterns</li>
+                            <li><strong>Location:</strong> Field position and crop part affected</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="reference-card">
+                    <h3>🛡️ Management Strategies</h3>
+                    <div class="reference-content">
+                        <h4>Integrated Pest Management (IPM):</h4>
+                        <ul>
+                            <li><strong>Cultural Control:</strong> Crop rotation, resistant varieties</li>
+                            <li><strong>Biological Control:</strong> Natural predators, beneficial insects</li>
+                            <li><strong>Mechanical Control:</strong> Traps, barriers, hand-picking</li>
+                            <li><strong>Chemical Control:</strong> Selective pesticides (last resort)</li>
+                            <li><strong>Prevention:</strong> Sanitation, proper spacing, monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="knowledge-implementation">
+                <h3>Implementation Guidelines</h3>
+                <div class="implementation-grid">
+                    <div class="implementation-card">
+                        <h4>📊 Data Structure</h4>
+                        <ul>
+                            <li>Create pest-crop mappings</li>
+                            <li>Link symptoms to diagnoses</li>
+                            <li>Associate treatments with conditions</li>
+                            <li>Track regional variations</li>
+                        </ul>
+                    </div>
+
+                    <div class="implementation-card">
+                        <h4>🎯 AI Integration</h4>
+                        <ul>
+                            <li>Symptom-based diagnosis</li>
+                            <li>Preventive recommendations</li>
+                            <li>Treatment plan generation</li>
+                            <li>Risk assessment</li>
+                        </ul>
+                    </div>
+
+                    <div class="implementation-card">
+                        <h4>📚 Knowledge Sources</h4>
+                        <ul>
+                            <li>Agricultural extension services</li>
+                            <li>Entomology research databases</li>
+                            <li>Plant pathology journals</li>
+                            <li>Regional farming guides</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Agentic AI Farmer Challenge</h3>
+                    <p>Building intelligent agricultural advisors for sustainable farming</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#requirements">Requirements</a></li>
+                        <li><a href="#evaluation">Evaluation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#knowledge">Knowledge Base</a></li>
+                        <li><a href="#resources">Pest & Disease</a></li>
+                        <li><a href="#deliverables">Deliverables</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Agentic AI Farmer Challenge. Advanced LLM-based Agricultural Advisory System.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
